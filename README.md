@@ -14,14 +14,14 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
     - name: lint
-      uses: anderssonpeter/cloud-init-linter@v0.2
+      uses: anderssonpeter/cloud-init-linter@v1
 ```
 
 ## Usage
 
 This is a list of the arguments this action can take:
 
-| Name  | Required | Description        | Default                     |
-|-------|----------|--------------------|-----------------------------|
+| Name  | Required | Description        | Default                      |
+|-------|----------|--------------------|------------------------------|
 | files | No       | What files to lint | `**/*cloud-init*.{yml,yaml}` |
 
