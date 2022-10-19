@@ -6,7 +6,7 @@ for config_file in "${config_files[@]}"; do
     result="$(cloud-init devel schema --config-file $config_file 2>&1)"
     if [[ "$?" -eq 0 ]]
     then
-        echo "$result"
+        echo "::notice file=$config_file::Was valid"
     else
         echo "::error file=$config_file::$result"
         had_errors=1
