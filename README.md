@@ -13,7 +13,7 @@ jobs:
     steps: 
     - name: Checkout
       uses: actions/checkout@master
-    - name: lint
+    - name: Lint cloud-init
       uses: anderssonpeter/cloud-init-linter@v1
 ```
 
